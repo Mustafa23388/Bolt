@@ -37,16 +37,16 @@ export default function Psychology() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
             Why Businesses Choose{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700">
               Magmar
             </span>
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
-              { icon: Shield, label: 'Trusted', color: 'from-blue-500 to-cyan-500' },
-              { icon: Zap, label: 'Fast Results', color: 'from-cyan-500 to-blue-500' },
-              { icon: Target, label: 'Precise', color: 'from-blue-500 to-cyan-500' },
+              { icon: Shield, label: 'Trusted', color: 'from-red-500 to-red-800' },
+              { icon: Zap, label: 'Fast Results', color: 'from-red-600 to-red-900' },
+              { icon: Target, label: 'Precise', color: 'from-red-500 to-red-800' },
             ].map((item, idx) => (
               <div
                 key={idx}
@@ -58,8 +58,8 @@ export default function Psychology() {
             ))}
           </div>
 
-          <div className="bg-gradient-to-br from-blue-900/30 to-cyan-900/30 backdrop-blur-xl rounded-2xl p-8 md:p-12 border border-blue-500/20 shadow-2xl">
-            <p className="text-lg md:text-xl text-blue-100 leading-relaxed text-center">
+          <div className="bg-gradient-to-br from-red-950/30 to-red-900/30 backdrop-blur-xl rounded-2xl p-8 md:p-12 border border-red-500/20 shadow-2xl">
+            <p className="text-lg md:text-xl text-red-100 leading-relaxed text-center">
               At Magmar Enterprises, we understand that time is money — and stress is expensive.
               That's why we've built a company where you don't need to search for multiple vendors
               or chase freelancers. From Website Design & Development, App Development, and Digital

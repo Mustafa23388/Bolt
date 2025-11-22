@@ -36,11 +36,11 @@ export default function About() {
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               About{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700">
                 Us
               </span>
             </h2>
-            <p className="text-lg text-blue-100/80 leading-relaxed mb-8">
+            <p className="text-lg text-red-100/80 leading-relaxed mb-8">
               Magmar Enterprises is a full-scale global agency built to help startups and small
               businesses grow through creativity, technology, and intelligent systems. We design
               experiences, automate operations, and deliver strategies that make real impact. Every
@@ -55,9 +55,9 @@ export default function About() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-lg backdrop-blur-sm"
+                  className="flex items-center gap-2 px-4 py-2 bg-red-500/10 border border-red-500/30 rounded-lg backdrop-blur-sm"
                 >
-                  <item.icon className="w-5 h-5 text-blue-400" />
+                  <item.icon className="w-5 h-5 text-red-400" />
                   <span className="text-white font-medium">{item.text}</span>
                 </div>
               ))}
@@ -70,16 +70,16 @@ export default function About() {
             }`}
           >
             <div className="relative aspect-square">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-cyan-600/20 rounded-2xl backdrop-blur-xl border border-blue-500/30 overflow-hidden">
-                <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-blue-500/30 rounded-full blur-2xl animate-float"></div>
-                <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-cyan-500/30 rounded-full blur-2xl animate-float-delayed"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 to-red-900/20 rounded-2xl backdrop-blur-xl border border-red-500/30 overflow-hidden">
+                <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-red-500/30 rounded-full blur-2xl animate-float"></div>
+                <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-red-700/30 rounded-full blur-2xl animate-float-delayed"></div>
 
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="relative w-48 h-48">
                     {[...Array(3)].map((_, i) => (
                       <div
                         key={i}
-                        className="absolute inset-0 border-2 border-blue-400/30 rounded-full animate-ping-slow"
+                        className="absolute inset-0 border-2 border-red-400/30 rounded-full animate-ping-slow"
                         style={{
                           animationDelay: `${i * 0.5}s`,
                           animationDuration: '3s',
@@ -87,7 +87,7 @@ export default function About() {
                       ></div>
                     ))}
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full shadow-2xl shadow-blue-500/50"></div>
+                      <div className="w-24 h-24 bg-gradient-to-br from-red-500 to-red-800 rounded-full shadow-2xl shadow-red-500/50"></div>
                     </div>
                   </div>
                 </div>

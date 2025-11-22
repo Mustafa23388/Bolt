@@ -14,7 +14,7 @@ const services = [
     title: 'Website Design & Development',
     description:
       'Your website is your first impression — we make sure it\'s unforgettable. Our team builds high-performing, visually stunning websites that are responsive, secure, and built to convert. We focus on user experience, speed, and clear storytelling to turn visitors into loyal customers.',
-    gradient: 'from-blue-600 to-cyan-600',
+    gradient: 'from-red-600 to-red-800',
     animation: 'blueprint',
   },
   {
@@ -22,7 +22,7 @@ const services = [
     title: 'App Development',
     description:
       'We build mobile applications that connect people with purpose. Whether it\'s Android or iOS, we design intuitive apps that look modern, run fast, and help businesses stay ahead in a mobile-first world. Our apps are tailored to user behavior, ensuring smooth experiences that users love to keep using.',
-    gradient: 'from-cyan-600 to-blue-600',
+    gradient: 'from-red-700 to-red-900',
     animation: 'phone-mockup',
   },
   {
@@ -30,7 +30,7 @@ const services = [
     title: 'Digital Marketing & Growth Strategy',
     description:
       'We don\'t just market your brand — we make people fall in love with it. Our campaigns are designed to increase reach, build relationships, and drive revenue. We combine creative storytelling with data-driven insights to turn visibility into conversions.',
-    gradient: 'from-blue-600 to-indigo-600',
+    gradient: 'from-red-600 to-red-950',
     animation: 'charts',
   },
   {
@@ -38,7 +38,7 @@ const services = [
     title: 'Animation & Creative Design',
     description:
       'We bring brands to life with visuals that move hearts and minds. From animations to brand storytelling videos, we make every design a living experience. Our animations make your brand stand out — dynamic, emotional, and unforgettable.',
-    gradient: 'from-indigo-600 to-purple-600',
+    gradient: 'from-red-500 to-red-700',
     animation: 'reel',
   },
   {
@@ -46,7 +46,7 @@ const services = [
     title: 'Financial & Automation Services',
     description:
       'We help you stay on top of your business numbers with clarity and confidence. Our financial solutions simplify reporting, automate repetitive work, and help you make smarter decisions. We ensure your systems run efficiently, so you can focus on growth, not paperwork.',
-    gradient: 'from-cyan-600 to-teal-600',
+    gradient: 'from-red-800 to-red-950',
     animation: 'dashboard',
   },
   {
@@ -54,7 +54,7 @@ const services = [
     title: 'Branding, Graphics & Marketing Collateral',
     description:
       'We make your brand unforgettable through stunning design and strong identity. From logos and packaging to full brand systems, we design visuals that make people trust and remember you. Your brand deserves to speak with confidence and look timeless.',
-    gradient: 'from-blue-600 to-cyan-600',
+    gradient: 'from-red-600 to-red-800',
     animation: 'brand-reveal',
   },
 ];
@@ -88,7 +88,7 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
       }`}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-      <div className="relative h-full bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl rounded-2xl p-8 border border-blue-500/20 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2">
+      <div className="relative h-full bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl rounded-2xl p-8 border border-red-500/20 hover:border-red-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-red-500/20 hover:-translate-y-2">
         <div className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-2xl overflow-hidden">
           <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient}`}></div>
         </div>
@@ -100,13 +100,13 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
             <service.icon className="w-8 h-8 text-white" />
           </div>
 
-          <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-cyan-400 transition-all duration-300">
+          <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-red-400 group-hover:to-red-700 transition-all duration-300">
             {service.title}
           </h3>
 
-          <p className="text-blue-100/70 leading-relaxed">{service.description}</p>
+          <p className="text-red-100/70 leading-relaxed">{service.description}</p>
 
-          <div className="mt-6 flex items-center gap-2 text-blue-400 font-medium group-hover:gap-4 transition-all duration-300">
+          <div className="mt-6 flex items-center gap-2 text-red-400 font-medium group-hover:gap-4 transition-all duration-300">
             <span>Learn More</span>
             <svg
               className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300"
@@ -124,7 +124,7 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
           </div>
         </div>
 
-        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/10 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
+        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-red-500/10 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
       </div>
     </div>
   );
@@ -139,11 +139,11 @@ export default function Services() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Our{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700">
               Services
             </span>
           </h2>
-          <p className="text-xl text-blue-200/70 max-w-2xl mx-auto">
+          <p className="text-xl text-red-200/70 max-w-2xl mx-auto">
             Everything you need to build, grow, and automate your business under one roof
           </p>
         </div>
