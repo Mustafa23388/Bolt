@@ -1,5 +1,6 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -55,13 +56,13 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="group px-8 py-4 bg-gradient-to-r from-red-600 to-red-800 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-red-500/50 transition-all duration-300 hover:scale-105 flex items-center gap-2">
+            <Link to="/contact" className="group px-8 py-4 bg-gradient-to-r from-red-600 to-red-800 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-red-500/50 transition-all duration-300 hover:scale-105 flex items-center gap-2">
               Get Started
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white rounded-lg font-semibold border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+            </Link>
+            <Link to="/services" className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white rounded-lg font-semibold border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
               Our Services
-            </button>
+            </Link>
           </div>
         </div>
       </div>
